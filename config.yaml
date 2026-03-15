@@ -4,15 +4,15 @@
 
 telegram:
   # Get from @BotFather → /newbot
-  bot_token: "8705250832:AAGtnq_jlktHsMgEENq6QapVJserTURQodM"
+  bot_token: ""
 
   # Your numeric Telegram user ID — get it from @userinfobot
   allowed_user_ids:
-    - 5108346584
+    - 
 
 gemini:
   # Free API key from https://aistudio.google.com/app/apikey
-  api_key: "AIzaSyDRzck0OVvGnurYOdVNSlO_XNkFm-ZlTho"
+  api_key: ""
 
 opencode:
   # Find yours by running in cmd:  where opencode
@@ -27,7 +27,7 @@ opencode:
   model: "opencode/minimax-m2.5-free"
 
   # The project folder OpenCode will edit — use forward slashes
-  work_dir: "C:/A my web projects/pksd-main - Copy"
+  work_dir: "C:/"
 
   # Where to save full run logs locally
   output_log_dir: "C:/Users/User/opencode-logs"
