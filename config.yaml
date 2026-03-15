@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────
+#  OpenCode Telegram Agent — Windows Local Config
+# ─────────────────────────────────────────────
+
+telegram:
+  # Get from @BotFather → /newbot
+  bot_token: "8705250832:AAGtnq_jlktHsMgEENq6QapVJserTURQodM"
+
+  # Your numeric Telegram user ID — get it from @userinfobot
+  allowed_user_ids:
+    - 5108346584
+
+gemini:
+  # Free API key from https://aistudio.google.com/app/apikey
+  api_key: "AIzaSyDRzck0OVvGnurYOdVNSlO_XNkFm-ZlTho"
+
+opencode:
+  # Find yours by running in cmd:  where opencode
+  # Common locations:
+  #   C:\Users\YOU\AppData\Local\Programs\opencode\opencode.exe
+  #   C:\Program Files\opencode\opencode.exe
+  # If opencode is on PATH, "opencode" alone works fine.
+  binary_path: "C:/Users/User/AppData/Roaming/npm/opencode.cmd"
+
+  # Model to use — run "opencode models" in cmd to see exact IDs on your account
+  # Common MiniMax 2.5 IDs on Zen: opencode/minimax-m2.5-free or opencode/MiniMax-Text-01
+  model: "opencode/minimax-m2.5-free"
+
+  # The project folder OpenCode will edit — use forward slashes
+  work_dir: "C:/A my web projects/pksd-main - Copy"
+
+  # Where to save full run logs locally
+  output_log_dir: "C:/Users/User/opencode-logs"
+
+  # Lines shown per Telegram streaming update
+  stream_chunk_lines: 15
+
+  # Max chars per Telegram message (hard limit 4096)
+  max_output_chars: 3800
+
+post_run:
+  # Auto git commit + push after every successful OpenCode run
+  git_push: true
+  commit_message: "chore: opencode agent update"
+
+  # Take a screenshot of your HTML file and send it to Telegram
+  screenshot: true
+  # html_file is now decided automatically by Gemini based on the task

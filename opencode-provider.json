@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────
+#  OpenCode CLI provider config — Zen API (MiniMax 2.5 free)
+#
+#  Place this file at: ~/.config/opencode/config.json
+#  OR set env var: OPENCODE_CONFIG=/path/to/opencode-provider.json
+# ─────────────────────────────────────────────────────────
+
+{
+  "model": "minimax/MiniMax-Text-01",
+  "provider": {
+    "name": "zen",
+    "baseUrl": "https://api.zenapi.tech/v1",
+    "apiKey": "YOUR_ZEN_API_KEY"
+  },
+  "autoAccept": true
+}
